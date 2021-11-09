@@ -63,14 +63,18 @@ console.log(countSum(1, -2, 3))
 
 
 //4.Посчитать выражение (макс(а*б*с, а+б+с))+3
-function maxNumber(a, b, c) {
-    const sum = a + b + c;
-    const mult = a * b * c;
-
-    return sum > mult ? sum + 3 : mult + 3;
+function MaxNumber(a, b, c) {
+    let res;
+    const sum = a + b + c
+    const mult = a * b * c
+    if (sum > mult) {
+        res = sum + 3;
+    } else {
+        res = mult + 3
+    }
+    return res
 }
-
-console.log(maxNumber(1, 2, 1));
+console.log(maxNumber(1, 2, 3)) // ответ 9
 
 
 

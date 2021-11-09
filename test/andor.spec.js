@@ -48,12 +48,14 @@ describe('andor', function() {
             expect(countSum(1, 3, -1)).to.equal(4)
         });
     });
+
     describe('4.Посчитать выражение (макс(а*б*с, а+б+с))+3', function() {
-        it('should return if a+b+c > a*b*c return sum +3, or vice versa ', function() {
-            expect(maxNumber(2, 1, 1)).to.equal(7);
-            expect(maxNumber(2, 5, 1)).to.equal(13);
+        it('should return sum +3 ', function() {
+            expect(MaxNumber(1, 2, 1)).to.equal(7);
+            expect(MaxNumber(3, 3, 1)).to.equal(12)
         });
     });
+
     describe('5.Написать программу определения оценки студента по его рейтингу, на основе следующих правил', function() {
         it('should return error (use numbers only)', function() {
             expect(mark("4")).to.equal('use numbers only')
@@ -68,7 +70,7 @@ describe('andor', function() {
             expect(mark(65)).to.equal('C')
             expect(mark(45)).to.equal('D')
             expect(mark(25)).to.equal('E')
-            expect(mark(1)).to.equal('F')
+            expect(mark(10)).to.equal('F')
         });
     });
 });
