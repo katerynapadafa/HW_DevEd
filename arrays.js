@@ -52,10 +52,10 @@ console.log(sumElem([1, 2, 3, 4, 5]))
 
 // Сделать реверс массива (массив в обратном направлении)
 
-function arr(x) {
-    return x.reverse();
+function reverseNumbersArray(array) {
+    return array.reverse();
 }
-console.log(arr([1, 2, 3]))
+console.log(reverseNumbersArray([1, 2, 3]))
 
 
 

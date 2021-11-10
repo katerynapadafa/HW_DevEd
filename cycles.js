@@ -27,18 +27,18 @@ function primeNumber(number) {
 }
 console.log(primeNumber(4))
 
-//Найти корень натурального числа с точностью до целого (рассмотреть вариант последовательного подбора и метод бинарного поиска)
+// //Найти корень натурального числа с точностью до целого (рассмотреть вариант последовательного подбора и метод бинарного поиска)
 
-function squareRoot(x) {
-    let result = Math.sqrt(x)
-    for (let i = 2; i < x; i++) {
-        if (Math.sqrt(x) % 2 == 0) {
-            result
-        }
-    }
-    return result
-}
-console.log(squareRoot(5))
+// function squareRoot(x) {
+//     let result = Math.sqrt(x)
+//     for (let i = 2; i < x; i++) {
+//         if (Math.sqrt(x) % 2 == 0) {
+//             result
+//         }
+//     }
+//     return result
+// }
+// console.log(squareRoot(5))
 
 
 //Вычислить факториал числа n. n! = 1*2*…*n-1*n;
